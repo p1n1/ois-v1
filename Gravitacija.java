@@ -6,6 +6,8 @@ public class Gravitacija {
         System.out.println("OIS je zakon!");
         Scanner sc = new Scanner(System.in);
         double h = sc.nextInt();
+
+        printPospesek(h);
     }
 
     
@@ -19,5 +21,10 @@ public class Gravitacija {
         a = (c*m)/((r + nadmorskaV) * (r + nadmorskaV));
 
         return a;
+    }
+
+    public static void printPospesek(double nadmorskaV ){
+        System.out.println("Nadmorska višina: " + nadmorskaV + "m");
+        System.out.println("Pospešek:" + pospesek(nadmorskaV) + "m/sˇ2");
     }
 }
